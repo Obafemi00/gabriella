@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowRight, ChevronRight } from "lucide-react";
 import ProgressSummary from "@/components/ProgressSummary";
 import { WORDS, GROUPS } from "@/lib/words";
 
@@ -13,31 +14,40 @@ const TOOLS = [
 export default function Home() {
   return (
     <>
-      <section className="hero">
-        <h1>Build your IELTS vocabulary, one topic at a time.</h1>
-        <p className="lead">
-          {WORDS.length} words and phrases across {GROUPS.length} topics that come up often in IELTS Writing and Speaking,
-          each with an example sentence and the words it is usually used with.
-        </p>
-        <div className="toolbar">
-          <Link href="/words" className="btn">Start with the words</Link>
-          <Link href="/quiz" className="btn ghost">Take a quiz</Link>
+      <section className="hero-grid">
+        <div className="hero">
+          <h1>Build your IELTS vocabulary, one topic at a time.</h1>
+          <p className="lead">
+            {WORDS.length} words and phrases across {GROUPS.length} topics that come up often in IELTS Writing and
+            Speaking, each with an example sentence and the words it is usually used with.
+          </p>
+          <div className="toolbar">
+            <Link href="/words" className="btn">
+              Start with the words
+              <ArrowRight size={18} aria-hidden="true" />
+            </Link>
+            <Link href="/quiz" className="btn ghost">Take a quiz</Link>
+          </div>
         </div>
-      </section>
 
-      <section className="home-progress">
-        <h2>Your progress</h2>
-        <ProgressSummary />
+        <div className="home-progress panel-soft">
+          <h2>Your progress</h2>
+          <ProgressSummary />
+        </div>
       </section>
 
       <section>
         <h2 className="sr-only">Practice tools</h2>
         <ul className="tools">
-          {TOOLS.map(([href, name, desc]) => (
+          {TOOLS.map(([href, name, desc], i) => (
             <li key={href}>
               <Link href={href} className="tool">
-                <span className="tool-name">{name}</span>
-                <span className="tool-desc">{desc}</span>
+                <span className="tool-num">{String(i + 1).padStart(2, "0")}</span>
+                <span className="tool-body">
+                  <span className="tool-name">{name}</span>
+                  <span className="tool-desc">{desc}</span>
+                </span>
+                <ChevronRight size={18} aria-hidden="true" className="tool-chevron" />
               </Link>
             </li>
           ))}

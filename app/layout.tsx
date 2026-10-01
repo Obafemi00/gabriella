@@ -16,15 +16,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Literata:ital,opsz,wght@0,7..72,400;1,7..72,400&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;1,7..72,400;1,7..72,500&display=swap"
         />
       </head>
       <body>
         <Nav />
         <main className="wrap main">{children}</main>
-        <footer className="wrap footer">
-          <p>Gabriella. Your progress is saved in this browser.</p>
-          <p>IELTS is a registered trademark jointly owned by the British Council, IDP IELTS and Cambridge University Press &amp; Assessment. This site is not affiliated with them.</p>
+        <footer className="footer">
+          <div className="wrap footer-inner">
+            <p><span className="footer-brand">Gabriella.</span> Your progress is saved in this browser.</p>
+            <p>IELTS is a registered trademark jointly owned by the British Council, IDP IELTS and Cambridge University Press &amp; Assessment. This site is not affiliated with them.</p>
+          </div>
         </footer>
       </body>
     </html>
