@@ -2,9 +2,7 @@
 import { useEffect, useRef } from "react";
 import type { Word } from "@/lib/words";
 import type { Status } from "@/lib/progress";
-import { STATUS_LABEL } from "@/lib/utils";
-import WordDetails from "./WordDetails";
-import RateButtons from "./RateButtons";
+import WordDetailPanel from "./WordDetailPanel";
 
 type Props = {
   word: Word | null;
@@ -15,40 +13,45 @@ type Props = {
   onClear: () => void;
 };
 
+// On desktop the word detail lives in the persistent pane rendered by WordMountain,
+// so this dialog only opens as a mobile bottom sheet.
 export default function WordDialog({ word, status, onClose, onMark, onNext, onClear }: Props) {
   const ref = useRef<HTMLDialogElement>(null);
+
   useEffect(() => {
     const d = ref.current;
     if (!d) return;
+    const isDesktop = window.matchMedia("(min-width: 860px)").matches;
+    if (isDesktop) {
+      if (d.open) d.close();
+      return;
+    }
     if (word && !d.open) d.showModal();
     if (!word && d.open) d.close();
   }, [word]);
 
+  useEffect(() => {
+    const mq = window.matchMedia("(min-width: 860px)");
+    function sync() {
+      const d = ref.current;
+      if (mq.matches && d?.open) d.close();
+    }
+    mq.addEventListener("change", sync);
+    return () => mq.removeEventListener("change", sync);
+  }, []);
+
   return (
     <dialog
       ref={ref}
-      className="dialog"
+      className="dialog word-sheet"
       aria-label={word ? word.word : "Word"}
       onClose={onClose}
       onClick={(e) => { if (e.target === ref.current) onClose(); }}
-      onKeyDown={(e) => {
-        const m = ({ "1": "k", "2": "u", "3": "d" } as const)[e.key as "1" | "2" | "3"];
-        if (m) { e.preventDefault(); onMark(m); }
-        else if (e.key === "ArrowRight") { e.preventDefault(); onNext(); }
-      }}
     >
       {word && (
         <div className="dialog-body">
-          <WordDetails w={word} />
-          <p className="note">{status ? `Marked: ${STATUS_LABEL[status]}` : "Not yet reviewed"}</p>
-          <RateButtons onRate={onMark} />
-          <div className="dialog-foot">
-            <button type="button" className="link" onClick={onClear}>Clear mark</button>
-            <span>
-              <button type="button" className="link" onClick={onClose}>Close</button>
-              <button type="button" className="link" onClick={onNext}>Next word</button>
-            </span>
-          </div>
+          <div className="sheet-handle" aria-hidden="true" />
+          <WordDetailPanel word={word} status={status} onMark={onMark} onNext={onNext} onClear={onClear} onClose={onClose} />
         </div>
       )}
     </dialog>
