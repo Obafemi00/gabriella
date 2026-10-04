@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import { Check } from "lucide-react";
 import { CUE_CARDS } from "@/lib/prompts";
 import { WORDS } from "@/lib/words";
 import { useProgress } from "@/lib/progress";
@@ -14,6 +15,8 @@ export default function Speaking() {
   const [phase, setPhase] = useState<Phase>("ready");
   const [left, setLeft] = useState(PREP);
   const [notes, setNotes] = useState("");
+  // Words ticked off while speaking. Session-only: never saved, cleared with each new cue card.
+  const [used, setUsed] = useState<Record<string, boolean>>({});
 
   useEffect(() => {
     if (phase !== "prep" && phase !== "talk") return;
@@ -27,7 +30,7 @@ export default function Speaking() {
     else if (phase === "talk") setPhase("done");
   }, [left, phase]);
 
-  function reset(nextIdx = idx) { setIdx(nextIdx); setPhase("ready"); setLeft(PREP); setNotes(""); }
+  function reset(nextIdx = idx) { setIdx(nextIdx); setPhase("ready"); setLeft(PREP); setNotes(""); setUsed({}); }
   function another() {
     let n = idx;
     while (n === idx && CUE_CARDS.length > 1) n = Math.floor(Math.random() * CUE_CARDS.length);
@@ -35,12 +38,17 @@ export default function Speaking() {
   }
 
   const card = CUE_CARDS[idx];
-  const suggest = WORDS.filter((w) => w.gi === card.gi && progress[w.word] !== "k").slice(0, 6);
+  // Still learning: Don't know first, then Unsure.
+  const learning = [
+    ...WORDS.filter((w) => progress[w.word] === "d"),
+    ...WORDS.filter((w) => progress[w.word] === "u"),
+  ].slice(0, 6);
+  const nUsed = learning.filter((w) => used[w.word]).length;
 
   return (
     <div className="stage">
       <div className="cue">
-        <p className="cue-topic">{card.topic}</p>
+        <p className="cue-prompt">{card.prompt}</p>
         <p className="note">You should say:</p>
         <ul>{card.points.map((p) => <li key={p}>{p}</li>)}</ul>
         <p>{card.explain}</p>
@@ -69,10 +77,28 @@ export default function Speaking() {
         <textarea rows={4} value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="Jot down key points during preparation" />
       </label>
 
-      {suggest.length > 0 && (
+      {learning.length > 0 && (
         <div className="suggest">
-          <p className="note">Words to try using in your answer:</p>
-          <div className="chips">{suggest.map((w) => <span key={w.word} className="chip" data-s={progress[w.word]} title={w.def}>{w.word}</span>)}</div>
+          <div className="learn-head">
+            <h2 className="learn-title">Words you&apos;re still learning · tap when you&apos;ve used one</h2>
+            {nUsed > 0 && <span className="learn-count">{nUsed} of {learning.length} used</span>}
+          </div>
+          <div className="learn-chips">
+            {learning.map((w) => (
+              <button
+                key={w.word}
+                type="button"
+                className="learn-chip"
+                data-s={progress[w.word]}
+                aria-pressed={!!used[w.word]}
+                title={w.def}
+                onClick={() => setUsed((u) => ({ ...u, [w.word]: !u[w.word] }))}
+              >
+                {used[w.word] && <Check size={14} aria-hidden="true" />}
+                {w.word}
+              </button>
+            ))}
+          </div>
         </div>
       )}
       <p className="note">Tip: record yourself on your phone and listen back. Check your fluency, pronunciation and whether you covered every point on the card.</p>

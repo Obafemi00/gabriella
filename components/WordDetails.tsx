@@ -10,7 +10,7 @@ export default function WordDetails({ w, showWord = true }: { w: Word; showWord?
         <div className="word-head">
           <div>
             <p className="word">{w.word}</p>
-            <p className="pos">{w.pos}, {w.group}</p>
+            <p className="pos">{w.pos}</p>
           </div>
           {canSpeak && (
             <button type="button" className="btn-small" onClick={(e) => { e.stopPropagation(); speak(w.word); }}>Listen</button>

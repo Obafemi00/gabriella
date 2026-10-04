@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: { default: "Gabriella | IELTS vocabulary practice", template: "%s | Gabriella" },
-  description: "Learn IELTS vocabulary by topic with a word list, flashcards, quizzes, and speaking and writing practice.",
+  description: "Learn IELTS vocabulary with a searchable word list, flashcards, quizzes, and speaking and writing practice.",
 };
 export const viewport: Viewport = { themeColor: "#ffffff" };
 

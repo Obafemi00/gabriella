@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import { GROUPS, WORDS, byGroup, type Word } from "@/lib/words";
+import { WORDS, type Word } from "@/lib/words";
 import { setStatus } from "@/lib/progress";
 import { escapeRegExp, isTyping, pick, shuffle } from "@/lib/utils";
 
@@ -9,21 +9,14 @@ type Q = { w: Word; type: "def" | "gap"; opts: Word[]; prompt: string };
 function build(w: Word): Q {
   const re = new RegExp(escapeRegExp(w.word), "i");
   const type: Q["type"] = re.test(w.ex) && Math.random() < 0.5 ? "gap" : "def";
-  let distract: Word[];
-  if (type === "def") {
-    // Same-topic options: the definition is what tells them apart.
-    distract = pick(WORDS.filter((x) => x.gi === w.gi && x.word !== w.word), 3);
-  } else {
-    // Other-topic options, same part of speech where possible, so only one option fits the sentence.
-    const other = WORDS.filter((x) => x.gi !== w.gi);
-    const samePos = other.filter((x) => x.pos === w.pos);
-    distract = pick(samePos.length >= 3 ? samePos : other, 3);
-  }
+  // Same part of speech where possible, so only one option fits the meaning or sentence.
+  const other = WORDS.filter((x) => x.word !== w.word);
+  const samePos = other.filter((x) => x.pos === w.pos);
+  const distract = pick(samePos.length >= 3 ? samePos : other, 3);
   return { w, type, opts: shuffle([w, ...distract]), prompt: type === "gap" ? w.ex.replace(re, "_____") : w.def };
 }
 
 export default function Quiz() {
-  const [group, setGroup] = useState("all");
   const [qs, setQs] = useState<Q[] | null>(null);
   const [i, setI] = useState(0);
   const [score, setScore] = useState(0);
@@ -32,8 +25,7 @@ export default function Quiz() {
   const nextRef = useRef<HTMLButtonElement>(null);
 
   function begin() {
-    const pool = byGroup(group);
-    setQs(pick(pool, Math.min(10, pool.length)).map(build));
+    setQs(pick(WORDS, Math.min(10, WORDS.length)).map(build));
     setI(0); setScore(0); setMissed([]); setChosen(null);
   }
   function answer(j: number) {
@@ -64,12 +56,6 @@ export default function Quiz() {
   return (
     <>
       <div className="toolbar">
-        <label className="field">Topic
-          <select value={group} onChange={(e) => setGroup(e.target.value)}>
-            <option value="all">All topics</option>
-            {GROUPS.map((g, gi) => <option key={g.name} value={gi}>{g.name}</option>)}
-          </select>
-        </label>
         <button type="button" className="btn" onClick={begin}>Start quiz</button>
       </div>
 

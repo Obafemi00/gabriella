@@ -41,7 +41,7 @@ export default function Writing() {
     <div className="stage">
       <div className="cue">
         <p className="note">Writing Task 2</p>
-        <p className="cue-topic">{essay.prompt}</p>
+        <p className="cue-prompt">{essay.prompt}</p>
         <p className="note">Write at least {MIN_WORDS} words. The recommended time is 40 minutes.</p>
       </div>
 

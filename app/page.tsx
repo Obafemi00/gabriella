@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { ArrowRight, ChevronRight } from "lucide-react";
 import ProgressSummary from "@/components/ProgressSummary";
-import { WORDS, GROUPS } from "@/lib/words";
+import { WORDS } from "@/lib/words";
 
 const TOOLS = [
-  ["/words", "Words", "Browse every word by topic and mark what you know."],
+  ["/words", "Words", "Search the full word list and mark what you know."],
   ["/flashcards", "Flashcards", "Turn cards over, rate yourself, and review the ones you missed."],
   ["/quiz", "Quiz", "Ten quick questions: definitions and gap-fill sentences."],
   ["/speaking", "Speaking", "Part 2 cue cards with a one-minute preparation timer and two-minute talk timer."],
@@ -16,9 +16,9 @@ export default function Home() {
     <>
       <section className="hero-grid">
         <div className="hero">
-          <h1>Build your IELTS vocabulary, one topic at a time.</h1>
+          <h1>Build your IELTS vocabulary, one word at a time.</h1>
           <p className="lead">
-            {WORDS.length} words and phrases across {GROUPS.length} topics that come up often in IELTS Writing and
+            {WORDS.length} words and phrases that come up often in IELTS Writing and
             Speaking, each with an example sentence and the words it is usually used with.
           </p>
           <div className="toolbar">
