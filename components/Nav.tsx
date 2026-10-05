@@ -1,8 +1,9 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { Menu, X } from "lucide-react";
+import { signOut, useAuthEmail } from "@/lib/supabase/use-auth-email";
 
 const LINKS = [
   ["/words", "Words"],
@@ -11,14 +12,25 @@ const LINKS = [
   ["/speaking", "Speaking"],
   ["/writing", "Writing"],
 ] as const;
+const AUTH_PAGES = ["/login", "/signup", "/forgot-password", "/update-password"];
 
 export default function Nav() {
   const path = usePathname();
+  const router = useRouter();
+  const email = useAuthEmail();
   const [open, setOpen] = useState(false);
   const panelRef = useRef<HTMLElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
   const firstLinkRef = useRef<HTMLAnchorElement>(null);
   const current = LINKS.find(([href]) => href === path)?.[1];
+
+  // Come back to this page after signing in, unless it's Home or an auth page.
+  const signInHref = path === "/" || AUTH_PAGES.includes(path) ? "/login" : `/login?next=${encodeURIComponent(path)}`;
+  async function handleSignOut() {
+    setOpen(false);
+    await signOut();
+    router.refresh();
+  }
 
   // Close whenever the route actually changes.
   useEffect(() => { setOpen(false); }, [path]);
@@ -60,6 +72,17 @@ export default function Nav() {
             </Link>
           ))}
         </nav>
+        {email === null && (
+          <Link href={signInHref} className="nav-pill header-signin" aria-current={path === "/login" ? "page" : undefined}>
+            Sign in
+          </Link>
+        )}
+        {email && (
+          <div className="header-account">
+            <span className="header-email" title={email}>{email}</span>
+            <button type="button" className="nav-pill header-signout" onClick={handleSignOut}>Sign out</button>
+          </div>
+        )}
         <button
           ref={buttonRef}
           type="button"
@@ -87,6 +110,12 @@ export default function Nav() {
             {label}
           </Link>
         ))}
+        {email && (
+          <div className="menu-account">
+            <span className="menu-email" title={email}>{email}</span>
+            <button type="button" className="btn-small" onClick={handleSignOut}>Sign out</button>
+          </div>
+        )}
       </nav>
     </header>
   );
