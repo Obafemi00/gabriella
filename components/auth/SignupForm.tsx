@@ -2,7 +2,7 @@
 import { useState, type FormEvent } from "react";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
-import { authMessage } from "@/lib/auth-errors";
+import { authMessage, signupMessage, MISMATCH } from "@/lib/auth-errors";
 import { safeNext } from "@/lib/safe-next";
 import { Field, FormMessage } from "./AuthForm";
 
@@ -12,13 +12,18 @@ export default function SignupForm({ next }: { next: string }) {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirm, setConfirm] = useState("");
+  const [confirmTouched, setConfirmTouched] = useState(false);
   const [error, setError] = useState("");
   const [sent, setSent] = useState(false);
   const [busy, setBusy] = useState(false);
 
+  const mismatch = confirmTouched && confirm !== password;
+
   async function submit(e: FormEvent) {
     e.preventDefault();
     if (password.length < MIN) { setError(`Use at least ${MIN} characters for your password.`); return; }
+    if (confirm !== password) { setConfirmTouched(true); setError(""); return; }
     setBusy(true); setError("");
     try {
       const target = safeNext(next);
@@ -27,7 +32,7 @@ export default function SignupForm({ next }: { next: string }) {
         password,
         options: { emailRedirectTo: `${window.location.origin}/auth/confirm?next=${encodeURIComponent(target)}` },
       });
-      if (error) { setError(authMessage(error)); setBusy(false); return; }
+      if (error) { setError(signupMessage(error)); setBusy(false); return; }
       // With email confirmation turned off, Supabase signs the learner in straight away.
       if (data.session) { router.replace(target); router.refresh(); return; }
       setSent(true);
@@ -52,6 +57,11 @@ export default function SignupForm({ next }: { next: string }) {
       <Field
         label="Password" name="password" type="password" autoComplete="new-password"
         value={password} onChange={setPassword} minLength={MIN} hint={`At least ${MIN} characters.`}
+      />
+      <Field
+        label="Confirm password" name="confirm-password" type="password" autoComplete="new-password"
+        value={confirm} onChange={(v) => { setConfirm(v); setConfirmTouched(true); }}
+        error={mismatch ? MISMATCH : undefined}
       />
       <button type="submit" className="btn" disabled={busy}>{busy ? "Creating account…" : "Create account"}</button>
     </form>

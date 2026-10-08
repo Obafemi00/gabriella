@@ -263,7 +263,22 @@ select:focus, textarea:focus { box-shadow: var(--focus-ring); outline: none; }
   font: 500 var(--text-body) / 1.25 var(--sans);
 }
 .auth-field input:focus { box-shadow: var(--focus-ring); outline: none; }
+.auth-field input[aria-invalid="true"]:not(:focus) { box-shadow: inset 0 0 0 1.5px var(--danger); }
+.auth-input { position: relative; }
+.auth-input-password input { padding-right: var(--control-h); }
+/* Show/hide toggle: a square tap target the full height of the input, inside its right edge. */
+.auth-reveal {
+  position: absolute; top: 0; right: 0; width: var(--control-h); height: var(--control-h);
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 0; border: 0; background: transparent; color: var(--muted); cursor: pointer;
+  border-radius: var(--radius-md);
+}
+.auth-reveal:hover, .auth-reveal[aria-pressed="true"] { color: var(--ink); }
+.auth-reveal:focus-visible { box-shadow: var(--focus-ring); border-radius: var(--radius-md); }
+/* Hide the browser's own reveal button (Edge) so there is only one. */
+.auth-field input::-ms-reveal, .auth-field input::-ms-clear { display: none; }
 .auth-hint { font: 500 13px var(--sans); color: var(--muted); }
+.auth-field-error { font: 600 13px var(--sans); color: var(--danger); }
 .auth-aside { margin: calc(var(--space-2) * -1) 0 0; font: 600 14px var(--sans); }
 .auth-aside a, .auth-footer a { color: var(--pink-dark); }
 .auth-form .btn, .auth > .btn { width: 100%; height: var(--control-h); font-size: var(--text-body); line-height: 1.25; }

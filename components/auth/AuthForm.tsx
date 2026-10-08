@@ -1,4 +1,6 @@
-import type { ReactNode } from "react";
+"use client";
+import { useId, useLayoutEffect, useRef, useState, type ReactNode } from "react";
+import { Eye, EyeOff } from "lucide-react";
 
 // Shared layout for the sign-in, sign-up and password pages.
 export function AuthShell({ title, lead, children, footer }: { title: string; lead?: ReactNode; children: ReactNode; footer?: ReactNode }) {
@@ -21,25 +23,74 @@ export function Field(props: {
   onChange: (v: string) => void;
   minLength?: number;
   hint?: string;
+  error?: string;
 }) {
-  const hintId = props.hint ? `${props.name}-hint` : undefined;
+  const id = useId();
+  const inputRef = useRef<HTMLInputElement>(null);
+  const [shown, setShown] = useState(false);
+  // Caret/selection to put back after the input switches between password and text.
+  const restore = useRef<{ start: number | null; end: number | null; focus: boolean } | null>(null);
+
+  useLayoutEffect(() => {
+    const input = inputRef.current;
+    const r = restore.current;
+    if (!input || !r) return;
+    restore.current = null;
+    if (r.focus) input.focus();
+    if (r.start !== null && r.end !== null) input.setSelectionRange(r.start, r.end);
+  }, [shown]);
+
+  function toggle() {
+    const input = inputRef.current;
+    if (input) {
+      restore.current = { start: input.selectionStart, end: input.selectionEnd, focus: document.activeElement === input };
+    }
+    setShown((s) => !s);
+  }
+
+  const isPassword = props.type === "password";
+  const hintId = props.hint ? `${id}-hint` : undefined;
+  const errorId = props.error ? `${id}-error` : undefined;
+  const describedBy = [hintId, errorId].filter(Boolean).join(" ") || undefined;
+
   return (
-    <label className="auth-field">
-      <span className="auth-label">{props.label}</span>
-      <input
-        name={props.name}
-        type={props.type}
-        autoComplete={props.autoComplete}
-        value={props.value}
-        onChange={(e) => props.onChange(e.target.value)}
-        minLength={props.minLength}
-        aria-describedby={hintId}
-        required
-        spellCheck={false}
-        autoCapitalize="none"
-      />
+    <div className="auth-field">
+      <label htmlFor={id} className="auth-label">{props.label}</label>
+      <div className={isPassword ? "auth-input auth-input-password" : "auth-input"}>
+        <input
+          ref={inputRef}
+          id={id}
+          name={props.name}
+          type={isPassword && shown ? "text" : props.type}
+          autoComplete={props.autoComplete}
+          value={props.value}
+          onChange={(e) => props.onChange(e.target.value)}
+          minLength={props.minLength}
+          aria-describedby={describedBy}
+          aria-invalid={props.error ? true : undefined}
+          required
+          spellCheck={false}
+          autoCapitalize="none"
+          autoCorrect="off"
+        />
+        {isPassword && (
+          <button
+            type="button"
+            className="auth-reveal"
+            aria-label={shown ? "Hide password" : "Show password"}
+            aria-pressed={shown}
+            aria-controls={id}
+            // Keeps focus (and the caret) in the field when the button is clicked or tapped.
+            onMouseDown={(e) => e.preventDefault()}
+            onClick={toggle}
+          >
+            {shown ? <EyeOff size={20} aria-hidden="true" /> : <Eye size={20} aria-hidden="true" />}
+          </button>
+        )}
+      </div>
       {props.hint && <span id={hintId} className="auth-hint">{props.hint}</span>}
-    </label>
+      {props.error && <span id={errorId} className="auth-field-error" role="alert">{props.error}</span>}
+    </div>
   );
 }
 

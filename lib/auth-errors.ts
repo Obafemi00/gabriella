@@ -1,5 +1,5 @@
 // Turns Supabase auth errors into short, friendly messages. Raw error text is never shown.
-type AuthErrorLike = { code?: string; status?: number; name?: string } | null | undefined;
+type AuthErrorLike = { code?: string; status?: number; name?: string; message?: string } | null | undefined;
 
 const MESSAGES: Record<string, string> = {
   invalid_credentials: "That email and password don't match. Check them and try again.",
@@ -22,8 +22,21 @@ const MESSAGES: Record<string, string> = {
 export function authMessage(error: AuthErrorLike): string {
   if (error?.code && MESSAGES[error.code]) return MESSAGES[error.code];
   if (error?.status === 429) return MESSAGES.over_request_rate_limit;
-  if (error?.name === "AuthRetryableFetchError") return "We couldn't reach the server. Check your connection and try again.";
+  // supabase-js also raises AuthRetryableFetchError for 5xx replies; only status 0 is a real network failure.
+  if (error?.name === "AuthRetryableFetchError" && !error.status) return NETWORK_ERROR;
   return "Something went wrong. Please try again.";
 }
+
+// Sign-up sends the confirmation email inside the request, so a server error there almost
+// always means the email couldn't be sent.
+export function signupMessage(error: AuthErrorLike): string {
+  if (error?.status && error.status >= 500) return EMAIL_SEND_ERROR;
+  if (error?.message && /sending.*email|email.*send/i.test(error.message) && error.code !== "over_email_send_rate_limit") return EMAIL_SEND_ERROR;
+  return authMessage(error);
+}
+
+const NETWORK_ERROR = "We couldn't reach the server. Check your connection and try again.";
+const EMAIL_SEND_ERROR = "We couldn't send the confirmation email. Please try again in a few minutes.";
+export const MISMATCH = "Passwords don't match";
 
 export const LINK_ERROR = "That link has expired or was already used. Request a new one.";
