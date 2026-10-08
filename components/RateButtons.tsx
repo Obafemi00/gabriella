@@ -1,12 +1,19 @@
 "use client";
 import type { Status } from "@/lib/progress";
+import { STATUS_LABEL } from "@/lib/utils";
 
-export default function RateButtons({ onRate }: { onRate: (s: Status) => void }) {
+const KEYS: [Status, string][] = [["k", "1"], ["u", "2"], ["d", "3"]];
+
+export default function RateButtons({ value, onRate }: { value?: Status; onRate: (s: Status) => void }) {
   return (
-    <div className="rate">
-      <button type="button" className="rate-k" onClick={() => onRate("k")}>Know <kbd>1</kbd></button>
-      <button type="button" className="rate-u" onClick={() => onRate("u")}>Unsure <kbd>2</kbd></button>
-      <button type="button" className="rate-d" onClick={() => onRate("d")}>Don&apos;t know <kbd>3</kbd></button>
+    <div className="rate" role="group" aria-label="Mark this word">
+      {KEYS.map(([s, key]) => (
+        <button key={s} type="button" className={`rate-btn rate-${s}`} aria-pressed={value === s} onClick={() => onRate(s)}>
+          <span className={`status-dot s-${s}`} aria-hidden="true" />
+          {STATUS_LABEL[s]}
+          <kbd>{key}</kbd>
+        </button>
+      ))}
     </div>
   );
 }

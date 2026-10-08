@@ -2,11 +2,12 @@
 import { useEffect, useRef } from "react";
 import type { Word } from "@/lib/words";
 import type { Status } from "@/lib/progress";
-import WordDetailPanel from "./WordDetailPanel";
+import WordDetailPanel, { type WordContext } from "./WordDetailPanel";
 
 type Props = {
   word: Word | null;
   status?: Status;
+  context: WordContext;
   onClose: () => void;
   onMark: (s: Status) => void;
   onNext: () => void;
@@ -15,7 +16,7 @@ type Props = {
 
 // On desktop the word detail lives in the persistent pane rendered by WordMountain,
 // so this dialog only opens as a mobile bottom sheet.
-export default function WordDialog({ word, status, onClose, onMark, onNext, onClear }: Props) {
+export default function WordDialog({ word, status, context, onClose, onMark, onNext, onClear }: Props) {
   const ref = useRef<HTMLDialogElement>(null);
 
   useEffect(() => {
@@ -51,7 +52,7 @@ export default function WordDialog({ word, status, onClose, onMark, onNext, onCl
       {word && (
         <div className="dialog-body">
           <div className="sheet-handle" aria-hidden="true" />
-          <WordDetailPanel word={word} status={status} onMark={onMark} onNext={onNext} onClear={onClear} onClose={onClose} />
+          <WordDetailPanel word={word} status={status} context={context} onMark={onMark} onNext={onNext} onClear={onClear} onClose={onClose} />
         </div>
       )}
     </dialog>
