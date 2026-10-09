@@ -1,0 +1,829 @@
+word,section,pdf_meaning,pdf_collocation
+academic,Education,"related to education, study, or scholarly work",academic performance
+acquire,Education,"to gain or obtain something, especially through effort",placeholder
+adapt,Education,to change in order to suit a new situation,placeholder
+admission,Education,placeholder,placeholder
+assess,Education,to evaluate or judge the quality or importance of something,placeholder
+assignment,Education,placeholder,placeholder
+attain,Education,to achieve or reach a goal,placeholder
+broaden,Education,to make wider or more extensive,placeholder
+discipline,Education,placeholder,placeholder
+educate,Education,placeholder,placeholder
+enrol,Education,placeholder,placeholder
+evaluate,Education,"to judge the quality, value, or effectiveness of something",placeholder
+examination,Education,placeholder,placeholder
+faculty,Education,placeholder,placeholder
+graduate,Education,placeholder,placeholder
+numeracy,Education,placeholder,placeholder
+pedagogy,Education,placeholder,placeholder
+qualification,Education,placeholder,placeholder
+scholarship,Education,placeholder,placeholder
+semester,Education,placeholder,placeholder
+workload,Education,placeholder,placeholder
+achievement,Education,placeholder,placeholder
+concentration,Education,placeholder,placeholder
+comprehension,Education,placeholder,placeholder
+competence,Education,placeholder,placeholder
+diploma,Education,placeholder,placeholder
+dissertation,Education,placeholder,placeholder
+dropout,Education,placeholder,placeholder
+educational,Education,placeholder,placeholder
+enlighten,Education,placeholder,placeholder
+expel,Education,placeholder,placeholder
+instructor,Education,placeholder,placeholder
+mentor,Education,placeholder,placeholder
+motivate,Education,placeholder,placeholder
+research,Education,placeholder,placeholder
+revision,Education,placeholder,placeholder
+seminar,Education,placeholder,placeholder
+specialise,Education,placeholder,placeholder
+syllabus,Education,placeholder,placeholder
+tutorial,Education,placeholder,placeholder
+contaminate,Environment,placeholder,placeholder
+deforestation,Environment,placeholder,placeholder
+degrade,Environment,placeholder,placeholder
+depletion,Environment,placeholder,placeholder
+ecosystem,Environment,placeholder,placeholder
+endangered,Environment,placeholder,placeholder
+erosion,Environment,placeholder,placeholder
+extinction,Environment,placeholder,placeholder
+habitat,Environment,placeholder,placeholder
+landfill,Environment,placeholder,placeholder
+pollution,Environment,placeholder,placeholder
+preserve,Environment,placeholder,placeholder
+recycle,Environment,placeholder,placeholder
+wildlife,Environment,placeholder,placeholder
+climate,Environment,placeholder,placeholder
+drought,Environment,placeholder,placeholder
+ecological,Environment,placeholder,placeholder
+fossil fuel,Environment,placeholder,placeholder
+greenhouse,Environment,placeholder,placeholder
+industrialisation,Environment,placeholder,placeholder
+overpopulation,Environment,placeholder,placeholder
+reforestation,Environment,placeholder,placeholder
+resource,Environment,placeholder,placeholder
+scarcity,Environment,placeholder,placeholder
+toxic,Environment,placeholder,placeholder
+vegetation,Environment,placeholder,placeholder
+carbon,Environment,placeholder,placeholder
+catastrophic,Environment,placeholder,placeholder
+disposal,Environment,placeholder,placeholder
+environmental,Environment,placeholder,environmental protection
+exhaust,Environment,placeholder,placeholder
+global warming,Environment,placeholder,placeholder
+marine,Environment,placeholder,placeholder
+organic,Environment,placeholder,placeholder
+ozone,Environment,placeholder,placeholder
+protection,Environment,placeholder,placeholder
+purification,Environment,placeholder,placeholder
+reduction,Environment,placeholder,placeholder
+artificial,Technology,placeholder,placeholder
+cybersecurity,Technology,placeholder,placeholder
+database,Technology,placeholder,placeholder
+digital,Technology,placeholder,placeholder
+algorithm,Technology,placeholder,placeholder
+application,Technology,placeholder,placeholder
+artificial intelligence,Technology,placeholder,placeholder
+connectivity,Technology,placeholder,placeholder
+digitalisation,Technology,placeholder,placeholder
+efficient,Technology,placeholder,placeholder
+electronic,Technology,placeholder,placeholder
+emerging,Technology,placeholder,placeholder
+install,Technology,placeholder,placeholder
+interface,Technology,placeholder,placeholder
+network,Technology,placeholder,placeholder
+platform,Technology,placeholder,placeholder
+privacy,Technology,placeholder,placeholder
+robotics,Technology,placeholder,placeholder
+technological,Technology,placeholder,placeholder
+virtual,Technology,placeholder,placeholder
+access,Technology,placeholder,placeholder
+advanced,Technology,placeholder,placeholder
+communication,Technology,placeholder,placeholder
+computerised,Technology,placeholder,placeholder
+disrupt,Technology,placeholder,placeholder
+mechanism,Technology,placeholder,placeholder
+modernise,Technology,placeholder,placeholder
+patent,Technology,placeholder,placeholder
+processor,Technology,placeholder,placeholder
+programming,Technology,placeholder,placeholder
+researcher,Technology,placeholder,placeholder
+storage,Technology,placeholder,placeholder
+streaming,Technology,placeholder,placeholder
+user-friendly,Technology,placeholder,placeholder
+wireless,Technology,placeholder,placeholder
+adequate,Health,placeholder,placeholder
+ailment,Health,placeholder,placeholder
+antibiotic,Health,placeholder,placeholder
+balanced,Health,placeholder,placeholder
+diagnosis,Health,placeholder,placeholder
+disorder,Health,placeholder,placeholder
+healthcare,Health,placeholder,placeholder
+hygiene,Health,placeholder,placeholder
+immunity,Health,placeholder,placeholder
+infection,Health,placeholder,placeholder
+lifestyle,Health,placeholder,placeholder
+malnutrition,Health,placeholder,placeholder
+medication,Health,placeholder,placeholder
+mental,Health,placeholder,placeholder
+prevention,Health,placeholder,placeholder
+recover,Health,placeholder,placeholder
+symptom,Health,placeholder,placeholder
+therapy,Health,placeholder,placeholder
+treatment,Health,placeholder,placeholder
+vaccination,Health,placeholder,placeholder
+addiction,Health,placeholder,placeholder
+contagious,Health,placeholder,placeholder
+dietary,Health,placeholder,placeholder
+disability,Health,placeholder,placeholder
+fatigue,Health,placeholder,placeholder
+immune,Health,placeholder,placeholder
+medical,Health,placeholder,placeholder
+mortality,Health,placeholder,placeholder
+nutrition,Health,placeholder,placeholder
+patient,Health,placeholder,placeholder
+physical,Health,placeholder,placeholder
+psychological,Health,placeholder,placeholder
+rehabilitation,Health,placeholder,placeholder
+surgery,Health,placeholder,placeholder
+transmit,Health,placeholder,placeholder
+vulnerable,Health,placeholder,placeholder
+wellness,Health,placeholder,placeholder
+community,Society,placeholder,placeholder
+culture,Society,placeholder,placeholder
+diversity,Society,placeholder,placeholder
+equality,Society,placeholder,placeholder
+identity,Society,placeholder,placeholder
+integration,Society,placeholder,placeholder
+minority,Society,placeholder,placeholder
+population,Society,placeholder,placeholder
+prejudice,Society,placeholder,placeholder
+discrimination,Society,placeholder,placeholder
+social,Society,placeholder,social inequality
+tradition,Society,placeholder,placeholder
+custom,Society,placeholder,placeholder
+heritage,Society,placeholder,placeholder
+generation,Society,placeholder,placeholder
+household,Society,placeholder,placeholder
+migration,Society,placeholder,placeholder
+citizen,Society,placeholder,placeholder
+cohesion,Society,placeholder,placeholder
+coexist,Society,placeholder,placeholder
+conform,Society,placeholder,placeholder
+contemporary,Society,placeholder,placeholder
+demographic,Society,placeholder,placeholder
+domestic,Society,placeholder,placeholder
+ethnic,Society,placeholder,placeholder
+gender,Society,placeholder,placeholder
+globalisation,Society,placeholder,placeholder
+indigenous,Society,placeholder,placeholder
+marginalised,Society,placeholder,placeholder
+norm,Society,placeholder,placeholder
+participation,Society,placeholder,placeholder
+poverty,Society,placeholder,placeholder
+privilege,Society,placeholder,placeholder
+residence,Society,placeholder,placeholder
+segregation,Society,placeholder,placeholder
+societal,Society,placeholder,placeholder
+stereotype,Society,placeholder,placeholder
+tolerance,Society,placeholder,placeholder
+urban,Society,placeholder,placeholder
+deprived,Society,placeholder,placeholder
+disadvantaged,Society,placeholder,placeholder
+empower,Society,placeholder,placeholder
+inclusion,Society,placeholder,placeholder
+justice,Society,placeholder,placeholder
+multicultural,Society,placeholder,placeholder
+solidarity,Society,placeholder,placeholder
+administration,Government & Politics,placeholder,placeholder
+authority,Government & Politics,placeholder,placeholder
+bureaucracy,Government & Politics,placeholder,placeholder
+campaign,Government & Politics,placeholder,placeholder
+candidate,Government & Politics,placeholder,placeholder
+constitution,Government & Politics,placeholder,placeholder
+democracy,Government & Politics,placeholder,placeholder
+election,Government & Politics,placeholder,placeholder
+govern,Government & Politics,placeholder,placeholder
+minister,Government & Politics,placeholder,placeholder
+parliament,Government & Politics,placeholder,placeholder
+policy,Government & Politics,placeholder,placeholder
+politician,Government & Politics,placeholder,placeholder
+regulation,Government & Politics,placeholder,placeholder
+reform,Government & Politics,placeholder,placeholder
+representative,Government & Politics,placeholder,placeholder
+taxation,Government & Politics,placeholder,placeholder
+transparency,Government & Politics,placeholder,placeholder
+accountability,Government & Politics,placeholder,placeholder
+amend,Government & Politics,placeholder,placeholder
+budget,Government & Politics,placeholder,placeholder
+cabinet,Government & Politics,placeholder,placeholder
+corruption,Government & Politics,placeholder,placeholder
+diplomacy,Government & Politics,placeholder,placeholder
+governance,Government & Politics,placeholder,placeholder
+ideology,Government & Politics,placeholder,placeholder
+implement,Government & Politics,"to put a plan, policy, or decision into effect",implement a policy
+institution,Government & Politics,placeholder,placeholder
+jurisdiction,Government & Politics,placeholder,placeholder
+law,Government & Politics,placeholder,placeholder
+opposition,Government & Politics,placeholder,placeholder
+protest,Government & Politics,placeholder,placeholder
+public sector,Government & Politics,placeholder,placeholder
+revenue,Government & Politics,placeholder,placeholder
+sanction,Government & Politics,placeholder,placeholder
+subsidy,Government & Politics,placeholder,placeholder
+voter,Government & Politics,placeholder,placeholder
+centralise,Government & Politics,placeholder,placeholder
+decentralise,Government & Politics,placeholder,placeholder
+electorate,Government & Politics,placeholder,placeholder
+legitimate,Government & Politics,placeholder,placeholder
+mandatory,Government & Politics,placeholder,placeholder
+municipal,Government & Politics,placeholder,placeholder
+political,Government & Politics,placeholder,placeholder
+provision,Government & Politics,placeholder,placeholder
+afford,Economy & Business,placeholder,placeholder
+commerce,Economy & Business,placeholder,placeholder
+consumer,Economy & Business,placeholder,placeholder
+corporation,Economy & Business,placeholder,placeholder
+economic,Economy & Business,placeholder,economic growth
+economy,Economy & Business,placeholder,placeholder
+employment,Economy & Business,placeholder,placeholder
+enterprise,Economy & Business,placeholder,placeholder
+finance,Economy & Business,placeholder,placeholder
+inflation,Economy & Business,placeholder,placeholder
+investment,Economy & Business,placeholder,placeholder
+trade,Economy & Business,placeholder,placeholder
+wealth,Economy & Business,placeholder,placeholder
+capital,Economy & Business,placeholder,placeholder
+competitive,Economy & Business,placeholder,placeholder
+contract,Economy & Business,placeholder,placeholder
+demand,Economy & Business,placeholder,placeholder
+export,Economy & Business,placeholder,placeholder
+import,Economy & Business,placeholder,placeholder
+income,Economy & Business,placeholder,placeholder
+industry,Economy & Business,placeholder,placeholder
+labour,Economy & Business,placeholder,placeholder
+manufacture,Economy & Business,placeholder,placeholder
+monopoly,Economy & Business,placeholder,placeholder
+retail,Economy & Business,placeholder,placeholder
+sector,Economy & Business,placeholder,placeholder
+supply,Economy & Business,placeholder,placeholder
+transaction,Economy & Business,placeholder,placeholder
+wage,Economy & Business,placeholder,placeholder
+bankruptcy,Economy & Business,placeholder,placeholder
+cost-effective,Economy & Business,placeholder,placeholder
+financial,Economy & Business,placeholder,placeholder
+growth,Economy & Business,placeholder,placeholder
+interest,Economy & Business,placeholder,placeholder
+retention,Economy & Business,placeholder,placeholder
+startup,Economy & Business,placeholder,placeholder
+strategy,Economy & Business,placeholder,placeholder
+workplace,Economy & Business,placeholder,placeholder
+criminal,Crime & Law,placeholder,placeholder
+legal,Crime & Law,placeholder,placeholder
+offence,Crime & Law,placeholder,placeholder
+punishment,Crime & Law,placeholder,placeholder
+sentence,Crime & Law,placeholder,placeholder
+victim,Crime & Law,placeholder,placeholder
+witness,Crime & Law,placeholder,placeholder
+evidence,Crime & Law,placeholder,placeholder
+fraud,Crime & Law,placeholder,placeholder
+theft,Crime & Law,placeholder,placeholder
+violence,Crime & Law,placeholder,placeholder
+deterrent,Crime & Law,placeholder,placeholder
+convict,Crime & Law,placeholder,placeholder
+defendant,Crime & Law,placeholder,placeholder
+prosecution,Crime & Law,placeholder,placeholder
+investigation,Crime & Law,placeholder,placeholder
+penalty,Crime & Law,placeholder,placeholder
+offender,Crime & Law,placeholder,placeholder
+juvenile,Crime & Law,placeholder,placeholder
+cybercrime,Crime & Law,placeholder,placeholder
+domestic violence,Crime & Law,placeholder,placeholder
+enforcement,Crime & Law,placeholder,placeholder
+innocent,Crime & Law,placeholder,placeholder
+misconduct,Crime & Law,placeholder,placeholder
+prosecute,Crime & Law,placeholder,placeholder
+security,Crime & Law,placeholder,placeholder
+testimony,Crime & Law,placeholder,placeholder
+verdict,Crime & Law,placeholder,placeholder
+bail,Crime & Law,placeholder,placeholder
+custody,Crime & Law,placeholder,placeholder
+defence,Crime & Law,placeholder,placeholder
+imprisonment,Crime & Law,placeholder,placeholder
+juror,Crime & Law,placeholder,placeholder
+trial,Crime & Law,placeholder,placeholder
+congestion,Transport,placeholder,placeholder
+fare,Transport,placeholder,placeholder
+pedestrian,Transport,placeholder,placeholder
+public transport,Transport,placeholder,placeholder
+vehicle,Transport,placeholder,placeholder
+roadway,Transport,placeholder,placeholder
+affordable,Transport,placeholder,placeholder
+carbon emission,Transport,placeholder,placeholder
+mobility,Transport,placeholder,placeholder
+route,Transport,placeholder,placeholder
+urban planning,Transport,placeholder,placeholder
+aviation,Transport,placeholder,placeholder
+carpool,Transport,placeholder,placeholder
+cycle lane,Transport,placeholder,placeholder
+destination,Transport,placeholder,placeholder
+motorway,Transport,placeholder,placeholder
+transit,Transport,placeholder,placeholder
+commuter,Transport,placeholder,placeholder
+electric vehicle,Transport,placeholder,placeholder
+maintenance,Transport,placeholder,placeholder
+road safety,Transport,placeholder,placeholder
+terminal,Transport,placeholder,placeholder
+toll,Transport,placeholder,placeholder
+walkway,Transport,placeholder,placeholder
+accommodation,Cities & Housing,placeholder,placeholder
+architecture,Cities & Housing,placeholder,placeholder
+construction,Cities & Housing,placeholder,placeholder
+district,Cities & Housing,placeholder,placeholder
+housing,Cities & Housing,placeholder,placeholder
+neighbourhood,Cities & Housing,placeholder,placeholder
+property,Cities & Housing,placeholder,placeholder
+residential,Cities & Housing,placeholder,placeholder
+amenity,Cities & Housing,placeholder,placeholder
+commercial,Cities & Housing,placeholder,placeholder
+development,Cities & Housing,placeholder,placeholder
+downtown,Cities & Housing,placeholder,placeholder
+landlord,Cities & Housing,placeholder,placeholder
+tenant,Cities & Housing,placeholder,placeholder
+suburb,Cities & Housing,placeholder,placeholder
+skyscraper,Cities & Housing,placeholder,placeholder
+affordable housing,Cities & Housing,placeholder,placeholder
+convenient,Cities & Housing,placeholder,placeholder
+expansion,Cities & Housing,placeholder,placeholder
+facility,Cities & Housing,placeholder,placeholder
+industrial,Cities & Housing,placeholder,placeholder
+metropolitan,Cities & Housing,placeholder,placeholder
+population density,Cities & Housing,placeholder,placeholder
+renovation,Cities & Housing,placeholder,placeholder
+rural,Cities & Housing,placeholder,placeholder
+spacious,Cities & Housing,placeholder,placeholder
+vacancy,Cities & Housing,placeholder,placeholder
+zoning,Cities & Housing,placeholder,placeholder
+community centre,Cities & Housing,placeholder,placeholder
+estate,Cities & Housing,placeholder,placeholder
+housing shortage,Cities & Housing,placeholder,placeholder
+locality,Cities & Housing,placeholder,placeholder
+municipality,Cities & Housing,placeholder,placeholder
+overcrowded,Cities & Housing,placeholder,placeholder
+planning,Cities & Housing,placeholder,placeholder
+public space,Cities & Housing,placeholder,placeholder
+real estate,Cities & Housing,placeholder,placeholder
+redevelopment,Cities & Housing,placeholder,placeholder
+settlement,Cities & Housing,placeholder,placeholder
+career,Work & Career,placeholder,placeholder
+occupation,Work & Career,placeholder,placeholder
+profession,Work & Career,placeholder,placeholder
+employee,Work & Career,placeholder,placeholder
+employer,Work & Career,placeholder,placeholder
+promotion,Work & Career,placeholder,placeholder
+expertise,Work & Career,placeholder,placeholder
+leadership,Work & Career,placeholder,placeholder
+management,Work & Career,placeholder,placeholder
+responsibility,Work & Career,placeholder,placeholder
+recruitment,Work & Career,placeholder,placeholder
+applicant,Work & Career,placeholder,placeholder
+apprenticeship,Work & Career,placeholder,placeholder
+deadline,Work & Career,placeholder,placeholder
+flexible,Work & Career,placeholder,placeholder
+job satisfaction,Work & Career,placeholder,placeholder
+motivation,Work & Career,placeholder,placeholder
+professional,Work & Career,placeholder,placeholder
+retirement,Work & Career,placeholder,placeholder
+specialist,Work & Career,placeholder,placeholder
+supervisor,Work & Career,placeholder,placeholder
+teamwork,Work & Career,placeholder,placeholder
+unemployed,Work & Career,placeholder,placeholder
+work-life balance,Work & Career,placeholder,placeholder
+adaptability,Work & Career,placeholder,placeholder
+collaboration,Work & Career,placeholder,placeholder
+commitment,Work & Career,placeholder,placeholder
+dedication,Work & Career,placeholder,placeholder
+initiative,Work & Career,placeholder,placeholder
+performance,Work & Career,placeholder,placeholder
+resign,Work & Career,placeholder,placeholder
+advertisement,Media & Communication,placeholder,placeholder
+broadcast,Media & Communication,placeholder,placeholder
+celebrity,Media & Communication,placeholder,placeholder
+content,Media & Communication,placeholder,placeholder
+journalism,Media & Communication,placeholder,placeholder
+media,Media & Communication,placeholder,placeholder
+press,Media & Communication,placeholder,placeholder
+publication,Media & Communication,placeholder,placeholder
+social media,Media & Communication,placeholder,placeholder
+audience,Media & Communication,placeholder,placeholder
+bias,Media & Communication,placeholder,placeholder
+coverage,Media & Communication,placeholder,placeholder
+credible,Media & Communication,placeholder,placeholder
+editor,Media & Communication,placeholder,placeholder
+headline,Media & Communication,placeholder,placeholder
+journalist,Media & Communication,placeholder,placeholder
+misinformation,Media & Communication,placeholder,placeholder
+propaganda,Media & Communication,placeholder,placeholder
+rumour,Media & Communication,placeholder,placeholder
+source,Media & Communication,placeholder,placeholder
+subscribe,Media & Communication,placeholder,placeholder
+viral,Media & Communication,placeholder,placeholder
+accurate,Media & Communication,placeholder,placeholder
+anonymous,Media & Communication,placeholder,placeholder
+commentary,Media & Communication,placeholder,placeholder
+disseminate,Media & Communication,placeholder,placeholder
+documentary,Media & Communication,placeholder,placeholder
+entertainment,Media & Communication,placeholder,placeholder
+fact-check,Media & Communication,placeholder,placeholder
+influence,Media & Communication,placeholder,placeholder
+mainstream,Media & Communication,placeholder,placeholder
+newsletter,Media & Communication,placeholder,placeholder
+podcast,Media & Communication,placeholder,placeholder
+publicity,Media & Communication,placeholder,placeholder
+reliable,Media & Communication,placeholder,placeholder
+sensational,Media & Communication,placeholder,placeholder
+statement,Media & Communication,placeholder,placeholder
+trend,Media & Communication,placeholder,placeholder
+viewpoint,Media & Communication,placeholder,placeholder
+visual,Media & Communication,placeholder,placeholder
+widespread,Media & Communication,placeholder,placeholder
+artistic,Culture & Arts,placeholder,placeholder
+creativity,Culture & Arts,placeholder,placeholder
+cultural,Culture & Arts,placeholder,placeholder
+literature,Culture & Arts,placeholder,placeholder
+craft,Culture & Arts,placeholder,placeholder
+gallery,Culture & Arts,placeholder,placeholder
+inspiration,Culture & Arts,placeholder,placeholder
+masterpiece,Culture & Arts,placeholder,placeholder
+portrait,Culture & Arts,placeholder,placeholder
+sculpture,Culture & Arts,placeholder,placeholder
+creative,Culture & Arts,placeholder,placeholder
+exhibition,Culture & Arts,placeholder,placeholder
+fiction,Culture & Arts,placeholder,placeholder
+genre,Culture & Arts,placeholder,placeholder
+historical,Culture & Arts,placeholder,placeholder
+interpretation,Culture & Arts,placeholder,placeholder
+modern,Culture & Arts,placeholder,placeholder
+originality,Culture & Arts,placeholder,placeholder
+poetry,Culture & Arts,placeholder,placeholder
+representation,Culture & Arts,placeholder,placeholder
+ritual,Culture & Arts,placeholder,placeholder
+symbol,Culture & Arts,placeholder,placeholder
+theatrical,Culture & Arts,placeholder,placeholder
+artwork,Culture & Arts,placeholder,placeholder
+classical,Culture & Arts,placeholder,placeholder
+composer,Culture & Arts,placeholder,placeholder
+cultural exchange,Culture & Arts,placeholder,placeholder
+folk,Culture & Arts,placeholder,placeholder
+imagination,Culture & Arts,placeholder,placeholder
+performer,Culture & Arts,placeholder,placeholder
+storytelling,Culture & Arts,placeholder,placeholder
+attraction,Travel & Tourism,placeholder,placeholder
+itinerary,Travel & Tourism,placeholder,placeholder
+tourism,Travel & Tourism,placeholder,placeholder
+hospitality,Travel & Tourism,placeholder,placeholder
+reservation,Travel & Tourism,placeholder,placeholder
+adventure,Travel & Tourism,placeholder,placeholder
+excursion,Travel & Tourism,placeholder,placeholder
+landmark,Travel & Tourism,placeholder,placeholder
+transport,Travel & Tourism,placeholder,placeholder
+visa,Travel & Tourism,placeholder,placeholder
+coastal,Travel & Tourism,placeholder,placeholder
+cruise,Travel & Tourism,placeholder,placeholder
+local cuisine,Travel & Tourism,placeholder,placeholder
+package,Travel & Tourism,placeholder,placeholder
+recreation,Travel & Tourism,placeholder,placeholder
+resort,Travel & Tourism,placeholder,placeholder
+sightseeing,Travel & Tourism,placeholder,placeholder
+travel agency,Travel & Tourism,placeholder,placeholder
+traveller,Travel & Tourism,placeholder,placeholder
+sustainable tourism,Travel & Tourism,placeholder,placeholder
+peak season,Travel & Tourism,placeholder,placeholder
+off-season,Travel & Tourism,placeholder,placeholder
+adventure tourism,Travel & Tourism,placeholder,placeholder
+cultural tourism,Travel & Tourism,placeholder,placeholder
+destination management,Travel & Tourism,placeholder,placeholder
+eco-tourism,Travel & Tourism,placeholder,placeholder
+international,Travel & Tourism,placeholder,placeholder
+analysis,Science & Research,placeholder,placeholder
+approach,Science & Research,placeholder,placeholder
+assumption,Science & Research,placeholder,placeholder
+experiment,Science & Research,placeholder,placeholder
+hypothesis,Science & Research,placeholder,placeholder
+method,Science & Research,placeholder,placeholder
+observation,Science & Research,placeholder,placeholder
+scientific,Science & Research,placeholder,placeholder
+theory,Science & Research,placeholder,placeholder
+variable,Science & Research,placeholder,placeholder
+laboratory,Science & Research,placeholder,placeholder
+discovery,Science & Research,placeholder,placeholder
+finding,Science & Research,placeholder,placeholder
+measurement,Science & Research,placeholder,placeholder
+sample,Science & Research,placeholder,placeholder
+survey,Science & Research,placeholder,placeholder
+technology,Science & Research,placeholder,placeholder
+accuracy,Science & Research,placeholder,placeholder
+conclusion,Science & Research,placeholder,placeholder
+correlation,Science & Research,placeholder,placeholder
+criterion,Science & Research,placeholder,placeholder
+demonstrate,Science & Research,placeholder,placeholder
+estimate,Science & Research,placeholder,placeholder
+factor,Science & Research,placeholder,placeholder
+investigate,Science & Research,placeholder,placeholder
+objective,Science & Research,placeholder,placeholder
+outcome,Science & Research,placeholder,placeholder
+phenomenon,Science & Research,placeholder,placeholder
+statistical,Science & Research,placeholder,placeholder
+valid,Science & Research,placeholder,placeholder
+verify,Science & Research,placeholder,placeholder
+empirical,Science & Research,placeholder,placeholder
+evaluation,Science & Research,placeholder,placeholder
+fieldwork,Science & Research,placeholder,placeholder
+methodology,Science & Research,placeholder,placeholder
+quantitative,Science & Research,placeholder,placeholder
+qualitative,Science & Research,placeholder,placeholder
+research-based,Science & Research,placeholder,placeholder
+significant,Science & Research,important or sufficiently large to matter,significant impact
+agriculture,Food & Agriculture,placeholder,placeholder
+crop,Food & Agriculture,placeholder,placeholder
+farming,Food & Agriculture,placeholder,placeholder
+harvest,Food & Agriculture,placeholder,placeholder
+irrigation,Food & Agriculture,placeholder,placeholder
+livestock,Food & Agriculture,placeholder,placeholder
+pesticide,Food & Agriculture,placeholder,placeholder
+fertiliser,Food & Agriculture,placeholder,placeholder
+food security,Food & Agriculture,placeholder,placeholder
+diet,Food & Agriculture,placeholder,placeholder
+consumption,Food & Agriculture,placeholder,placeholder
+production,Food & Agriculture,placeholder,placeholder
+cultivation,Food & Agriculture,placeholder,placeholder
+fertile,Food & Agriculture,placeholder,placeholder
+grain,Food & Agriculture,placeholder,placeholder
+protein,Food & Agriculture,placeholder,placeholder
+yield,Food & Agriculture,placeholder,placeholder
+processed,Food & Agriculture,placeholder,placeholder
+agricultural,Food & Agriculture,placeholder,placeholder
+arable,Food & Agriculture,placeholder,placeholder
+commodity,Food & Agriculture,placeholder,placeholder
+distribution,Food & Agriculture,placeholder,placeholder
+industrial farming,Food & Agriculture,placeholder,placeholder
+organic farming,Food & Agriculture,placeholder,placeholder
+poultry,Food & Agriculture,placeholder,placeholder
+seafood,Food & Agriculture,placeholder,placeholder
+shortage,Food & Agriculture,placeholder,placeholder
+farmland,Food & Agriculture,placeholder,placeholder
+irrigate,Food & Agriculture,placeholder,placeholder
+monoculture,Food & Agriculture,placeholder,placeholder
+pasture,Food & Agriculture,placeholder,placeholder
+seasonal,Food & Agriculture,placeholder,placeholder
+soil,Food & Agriculture,placeholder,placeholder
+parenting,Family & Children,placeholder,placeholder
+adolescent,Family & Children,placeholder,placeholder
+adulthood,Family & Children,placeholder,placeholder
+upbringing,Family & Children,placeholder,placeholder
+education,Family & Children,placeholder,placeholder
+guidance,Family & Children,placeholder,placeholder
+independence,Family & Children,placeholder,placeholder
+maturity,Family & Children,placeholder,placeholder
+peer,Family & Children,placeholder,placeholder
+relationship,Family & Children,placeholder,placeholder
+support,Family & Children,placeholder,placeholder
+youth,Family & Children,placeholder,placeholder
+elderly,Family & Children,placeholder,placeholder
+guardian,Family & Children,placeholder,placeholder
+nursery,Family & Children,placeholder,placeholder
+offspring,Family & Children,placeholder,placeholder
+sibling,Family & Children,placeholder,placeholder
+caregiver,Family & Children,placeholder,placeholder
+conflict,Family & Children,placeholder,placeholder
+emotional,Family & Children,placeholder,placeholder
+nurture,Family & Children,placeholder,placeholder
+respect,Family & Children,placeholder,placeholder
+role model,Family & Children,placeholder,placeholder
+socialisation,Family & Children,placeholder,placeholder
+supervision,Family & Children,placeholder,placeholder
+birth rate,Family & Children,placeholder,placeholder
+childcare,Family & Children,placeholder,placeholder
+generation gap,Family & Children,placeholder,placeholder
+parental,Family & Children,placeholder,placeholder
+single-parent,Family & Children,placeholder,placeholder
+stability,Family & Children,placeholder,placeholder
+values,Family & Children,placeholder,placeholder
+multinational,Globalisation & International Issues,placeholder,placeholder
+immigration,Globalisation & International Issues,placeholder,placeholder
+cooperation,Globalisation & International Issues,placeholder,placeholder
+competition,Globalisation & International Issues,placeholder,placeholder
+developing,Globalisation & International Issues,placeholder,placeholder
+developed,Globalisation & International Issues,placeholder,placeholder
+aid,Globalisation & International Issues,placeholder,placeholder
+refugee,Globalisation & International Issues,placeholder,placeholder
+exchange,Globalisation & International Issues,placeholder,placeholder
+global,Globalisation & International Issues,placeholder,placeholder
+interdependence,Globalisation & International Issues,placeholder,placeholder
+outsourcing,Globalisation & International Issues,placeholder,placeholder
+tariff,Globalisation & International Issues,placeholder,placeholder
+humanitarian,Globalisation & International Issues,placeholder,placeholder
+international relations,Globalisation & International Issues,placeholder,placeholder
+sovereignty,Globalisation & International Issues,placeholder,placeholder
+sustainable development,Globalisation & International Issues,placeholder,placeholder
+transnational,Globalisation & International Issues,placeholder,placeholder
+treaty,Globalisation & International Issues,placeholder,placeholder
+coordination,Globalisation & International Issues,placeholder,placeholder
+disparity,Globalisation & International Issues,a noticeable difference or inequality,placeholder
+emerging economy,Globalisation & International Issues,placeholder,placeholder
+foreign investment,Globalisation & International Issues,placeholder,placeholder
+geopolitical,Globalisation & International Issues,placeholder,placeholder
+human rights,Globalisation & International Issues,placeholder,placeholder
+multilateral,Globalisation & International Issues,placeholder,placeholder
+regional,Globalisation & International Issues,placeholder,placeholder
+abundant,IELTS Academic Core,placeholder,placeholder
+ambiguous,IELTS Academic Core,placeholder,placeholder
+apparent,IELTS Academic Core,placeholder,placeholder
+coherent,IELTS Academic Core,"logical, clear, and well organised",placeholder
+considerable,IELTS Academic Core,placeholder,considerable amount
+conventional,IELTS Academic Core,"usual, traditional, or widely accepted",placeholder
+crucial,IELTS Academic Core,extremely important to a particular result,crucial role
+decline,IELTS Academic Core,placeholder,a gradual decline
+diminish,IELTS Academic Core,to become or make something smaller or less important,placeholder
+diverse,IELTS Academic Core,including a wide range of different people or things,placeholder
+dramatic,IELTS Academic Core,"very noticeable, sudden, or striking",placeholder
+eliminate,IELTS Academic Core,to remove or get rid of something completely,placeholder
+emerge,IELTS Academic Core,placeholder,placeholder
+enhance,IELTS Academic Core,"to improve the quality, value, or effectiveness of something",enhance the quality
+equivalent,IELTS Academic Core,placeholder,placeholder
+exceed,IELTS Academic Core,to be greater than a particular amount or limit,placeholder
+fundamental,IELTS Academic Core,basic and essential to something,placeholder
+generate,IELTS Academic Core,to produce or create something,placeholder
+gradual,IELTS Academic Core,placeholder,placeholder
+inevitable,IELTS Academic Core,certain to happen and impossible to avoid,placeholder
+indicate,IELTS Academic Core,"to show, suggest, or point to something",placeholder
+infer,IELTS Academic Core,to reach a conclusion from evidence rather than direct statements,placeholder
+justify,IELTS Academic Core,to give a good reason for something,placeholder
+maintain,IELTS Academic Core,to keep something at the same level or in good condition,placeholder
+modify,IELTS Academic Core,placeholder,placeholder
+notable,IELTS Academic Core,worthy of attention or notice,placeholder
+obtain,IELTS Academic Core,to get or acquire something,placeholder
+occur,IELTS Academic Core,placeholder,placeholder
+overall,IELTS Academic Core,considering the whole situation rather than individual parts,placeholder
+persistent,IELTS Academic Core,placeholder,placeholder
+predominant,IELTS Academic Core,"greater in amount, influence, or importance than others",placeholder
+relevant,IELTS Academic Core,directly connected with the subject or issue,placeholder
+subsequent,IELTS Academic Core,happening or coming after something else,placeholder
+substantial,IELTS Academic Core,"large in amount, size, or importance",substantial increase
+undermine,IELTS Academic Core,to weaken something gradually or indirectly,placeholder
+utilise,IELTS Academic Core,to use something effectively for a particular purpose,placeholder
+vary,IELTS Academic Core,placeholder,placeholder
+accommodate,IELTS Academic Core,placeholder,placeholder
+advocate,IELTS Academic Core,to publicly support or recommend something,advocate for reform
+contradict,IELTS Academic Core,placeholder,placeholder
+facilitate,IELTS Academic Core,to make a process or action easier,facilitate access
+hence,IELTS Academic Core,placeholder,placeholder
+likewise,IELTS Academic Core,placeholder,placeholder
+notwithstanding,IELTS Academic Core,placeholder,placeholder
+therefore,IELTS Academic Core,placeholder,placeholder
+arguably,IELTS Academic Core,used to introduce a claim that can reasonably be supported,placeholder
+conversely,IELTS Academic Core,in contrast to the previous point,placeholder
+respectively,IELTS Academic Core,in the same order as previously mentioned,placeholder
+alter,High-Value General Vocabulary,placeholder,placeholder
+anticipate,High-Value General Vocabulary,placeholder,placeholder
+beneficial,High-Value General Vocabulary,placeholder,placeholder
+challenge,High-Value General Vocabulary,placeholder,placeholder
+clarify,High-Value General Vocabulary,placeholder,placeholder
+compelling,High-Value General Vocabulary,very convincing or persuasive,placeholder
+comprehensive,High-Value General Vocabulary,placeholder,placeholder
+contribute,High-Value General Vocabulary,to help cause or produce something,placeholder
+controversial,High-Value General Vocabulary,causing disagreement or public argument,placeholder
+derive,High-Value General Vocabulary,to obtain or develop something from a source,placeholder
+dominate,High-Value General Vocabulary,placeholder,placeholder
+emphasise,High-Value General Vocabulary,placeholder,placeholder
+establish,High-Value General Vocabulary,placeholder,placeholder
+exacerbate,High-Value General Vocabulary,to make a problem or negative situation worse,exacerbate a problem
+feasible,High-Value General Vocabulary,possible and practical to achieve,placeholder
+foster,High-Value General Vocabulary,to encourage the development of something,foster development
+highlight,High-Value General Vocabulary,placeholder,placeholder
+imply,High-Value General Vocabulary,placeholder,placeholder
+incorporate,High-Value General Vocabulary,placeholder,placeholder
+negligible,High-Value General Vocabulary,so small or unimportant that it can almost be ignored,placeholder
+persist,High-Value General Vocabulary,to continue despite difficulty or opposition,placeholder
+plausible,High-Value General Vocabulary,reasonable and believable,placeholder
+precise,High-Value General Vocabulary,placeholder,placeholder
+promote,High-Value General Vocabulary,placeholder,placeholder
+profound,High-Value General Vocabulary,placeholder,placeholder
+pursue,High-Value General Vocabulary,placeholder,placeholder
+rational,High-Value General Vocabulary,placeholder,placeholder
+reinforce,High-Value General Vocabulary,placeholder,placeholder
+reluctant,High-Value General Vocabulary,placeholder,placeholder
+retain,High-Value General Vocabulary,to keep or continue to have something,placeholder
+reveal,High-Value General Vocabulary,placeholder,placeholder
+rigorous,High-Value General Vocabulary,extremely thorough and careful,placeholder
+scarce,High-Value General Vocabulary,placeholder,placeholder
+sufficient,High-Value General Vocabulary,placeholder,placeholder
+transform,High-Value General Vocabulary,to change something significantly,placeholder
+undergo,High-Value General Vocabulary,placeholder,placeholder
+unique,High-Value General Vocabulary,placeholder,placeholder
+viable,High-Value General Vocabulary,placeholder,placeholder
+accompany,Additional Academic Vocabulary,placeholder,placeholder
+accumulate,Additional Academic Vocabulary,placeholder,placeholder
+adjacent,Additional Academic Vocabulary,placeholder,placeholder
+aggregate,Additional Academic Vocabulary,placeholder,placeholder
+appreciate,Additional Academic Vocabulary,placeholder,placeholder
+arise,Additional Academic Vocabulary,placeholder,placeholder
+cease,Additional Academic Vocabulary,placeholder,placeholder
+circumstance,Additional Academic Vocabulary,placeholder,placeholder
+comprise,Additional Academic Vocabulary,placeholder,placeholder
+conceive,Additional Academic Vocabulary,placeholder,placeholder
+confine,Additional Academic Vocabulary,placeholder,placeholder
+consecutive,Additional Academic Vocabulary,placeholder,placeholder
+constitute,Additional Academic Vocabulary,placeholder,placeholder
+consume,Additional Academic Vocabulary,placeholder,placeholder
+controversy,Additional Academic Vocabulary,placeholder,placeholder
+correspond,Additional Academic Vocabulary,placeholder,placeholder
+denote,Additional Academic Vocabulary,placeholder,placeholder
+deviate,Additional Academic Vocabulary,placeholder,placeholder
+devote,Additional Academic Vocabulary,placeholder,placeholder
+distinct,Additional Academic Vocabulary,placeholder,placeholder
+dynamic,Additional Academic Vocabulary,placeholder,placeholder
+encounter,Additional Academic Vocabulary,placeholder,placeholder
+equally,Additional Academic Vocabulary,placeholder,placeholder
+exhibit,Additional Academic Vocabulary,placeholder,placeholder
+explicit,Additional Academic Vocabulary,placeholder,placeholder
+exploit,Additional Academic Vocabulary,placeholder,placeholder
+expose,Additional Academic Vocabulary,placeholder,placeholder
+external,Additional Academic Vocabulary,placeholder,placeholder
+framework,Additional Academic Vocabulary,placeholder,placeholder
+grant,Additional Academic Vocabulary,placeholder,placeholder
+identical,Additional Academic Vocabulary,placeholder,placeholder
+implicit,Additional Academic Vocabulary,placeholder,placeholder
+inhibit,Additional Academic Vocabulary,placeholder,placeholder
+inspect,Additional Academic Vocabulary,placeholder,placeholder
+intense,Additional Academic Vocabulary,placeholder,placeholder
+intrinsic,Additional Academic Vocabulary,placeholder,placeholder
+invoke,Additional Academic Vocabulary,placeholder,placeholder
+isolate,Additional Academic Vocabulary,placeholder,placeholder
+mutual,Additional Academic Vocabulary,placeholder,placeholder
+offset,Additional Academic Vocabulary,placeholder,placeholder
+orient,Additional Academic Vocabulary,placeholder,placeholder
+overlap,Additional Academic Vocabulary,placeholder,placeholder
+paradigm,Additional Academic Vocabulary,placeholder,placeholder
+parameter,Additional Academic Vocabulary,placeholder,placeholder
+portion,Additional Academic Vocabulary,placeholder,placeholder
+precede,Additional Academic Vocabulary,placeholder,placeholder
+presume,Additional Academic Vocabulary,placeholder,placeholder
+prior,Additional Academic Vocabulary,placeholder,placeholder
+proceed,Additional Academic Vocabulary,placeholder,placeholder
+prohibit,Additional Academic Vocabulary,placeholder,placeholder
+prominent,Additional Academic Vocabulary,placeholder,placeholder
+pursuit,Additional Academic Vocabulary,placeholder,placeholder
+random,Additional Academic Vocabulary,placeholder,placeholder
+refine,Additional Academic Vocabulary,placeholder,placeholder
+reluctance,Additional Academic Vocabulary,placeholder,placeholder
+sequence,Additional Academic Vocabulary,placeholder,placeholder
+shift,Additional Academic Vocabulary,placeholder,placeholder
+solely,Additional Academic Vocabulary,placeholder,placeholder
+specify,Additional Academic Vocabulary,placeholder,placeholder
+stable,Additional Academic Vocabulary,placeholder,placeholder
+substitute,Additional Academic Vocabulary,placeholder,placeholder
+supplement,Additional Academic Vocabulary,placeholder,placeholder
+terminate,Additional Academic Vocabulary,placeholder,placeholder
+trigger,Additional Academic Vocabulary,placeholder,placeholder
+underlie,Additional Academic Vocabulary,placeholder,placeholder
+uniform,Additional Academic Vocabulary,placeholder,placeholder
+unify,Additional Academic Vocabulary,placeholder,placeholder
+unprecedented,Additional Academic Vocabulary,placeholder,placeholder
+validity,Additional Academic Vocabulary,placeholder,placeholder
+via,Additional Academic Vocabulary,placeholder,placeholder
+whereby,Additional Academic Vocabulary,placeholder,placeholder
+accomplish,Additional Academic Vocabulary,placeholder,placeholder
+acknowledge,Additional Academic Vocabulary,placeholder,placeholder
+ambition,Additional Academic Vocabulary,placeholder,placeholder
+applicable,Additional Academic Vocabulary,placeholder,placeholder
+approximate,Additional Academic Vocabulary,placeholder,placeholder
+arbitrary,Additional Academic Vocabulary,placeholder,placeholder
+attribute,Additional Academic Vocabulary,placeholder,placeholder
+capacity,Additional Academic Vocabulary,placeholder,placeholder
+clarification,Additional Academic Vocabulary,placeholder,placeholder
+coincide,Additional Academic Vocabulary,placeholder,placeholder
+compatible,Additional Academic Vocabulary,placeholder,placeholder
+concentrate,Additional Academic Vocabulary,placeholder,placeholder
+consensus,Additional Academic Vocabulary,placeholder,placeholder
+consistent,Additional Academic Vocabulary,placeholder,placeholder
+cooperate,Additional Academic Vocabulary,placeholder,placeholder
+deduce,Additional Academic Vocabulary,placeholder,placeholder
+discriminate,Additional Academic Vocabulary,placeholder,placeholder
+distribute,Additional Academic Vocabulary,placeholder,placeholder
+duration,Additional Academic Vocabulary,placeholder,placeholder
+inherent,Additional Academic Vocabulary,placeholder,placeholder
+illustrate,Additional Academic Vocabulary,placeholder,placeholder
+integral,Additional Academic Vocabulary,placeholder,placeholder
+interval,Additional Academic Vocabulary,placeholder,placeholder
+perspective,Additional Academic Vocabulary,placeholder,placeholder
+priority,Additional Academic Vocabulary,placeholder,placeholder
+transition,Additional Academic Vocabulary,placeholder,placeholder
+abstract,Additional Academic Vocabulary,placeholder,placeholder
+capable,Additional Academic Vocabulary,placeholder,placeholder
+complex,Additional Academic Vocabulary,placeholder,placeholder
+acquisition,Additional Academic Vocabulary,placeholder,placeholder
+adaptation,Additional Academic Vocabulary,placeholder,placeholder
+advancement,Additional Academic Vocabulary,placeholder,placeholder
+alternative,Additional Academic Vocabulary,placeholder,placeholder
+benefit,Additional Academic Vocabulary,placeholder,placeholder
