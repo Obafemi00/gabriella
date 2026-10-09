@@ -168,6 +168,8 @@ a { color: inherit; }
   padding: var(--space-2) var(--gutter) var(--space-5);
   display: flex; flex-direction: column;
 }
+/* The display rules above would otherwise override the hidden attribute. */
+.menu-panel[hidden], .menu-backdrop[hidden] { display: none; }
 .menu-link {
   display: flex; align-items: center; min-height: 54px; padding: 0 var(--space-3); margin: 0 calc(var(--space-3) * -1);
   border-radius: var(--radius-sm); box-shadow: inset 0 -1px 0 var(--hairline);
@@ -634,7 +636,13 @@ button.chip:hover { border-color: var(--pink); border-left-color: inherit; }
 /* Word details */
 .word-detail { display: flex; flex-direction: column; gap: 16px; }
 .word-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.word-head-top { flex: 1; min-width: 0; display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
 .word-head-text { min-width: 0; }
+.word-close {
+  flex: none; width: 40px; height: 40px; margin: -4px -8px 0 0; border: 0; border-radius: var(--radius-pill);
+  background: transparent; color: var(--muted); display: inline-flex; align-items: center; justify-content: center; cursor: pointer;
+}
+.word-close:hover { background: var(--soft); color: var(--ink); }
 .word-group { margin: 0 0 4px; font: 600 13px var(--sans); color: var(--muted); white-space: nowrap; }
 .word { font: 800 34px / 1.15 var(--sans); letter-spacing: var(--tracking-heading); margin: 0; overflow-wrap: anywhere; }
 .pos { color: var(--muted); font: 500 14px var(--sans); margin: 2px 0 0; }
@@ -652,6 +660,7 @@ button.chip:hover { border-color: var(--pink); border-left-color: inherit; }
   .word { font-size: 38px; line-height: 1.1; letter-spacing: -0.03em; }
   .pos { font-size: 15px; margin-top: 4px; }
   .word-head { flex-direction: column; }
+  .word-head-top { align-self: stretch; }
   .def { font-size: 19px; }
   .ex { font-size: 17px; }
   .cols { flex-direction: column; gap: 0; }

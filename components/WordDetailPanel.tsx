@@ -20,6 +20,7 @@ export default function WordDetailPanel({
   onNext,
   onClear,
   onClose,
+  onDismiss,
 }: {
   word: Word;
   status?: Status;
@@ -28,11 +29,13 @@ export default function WordDetailPanel({
   onNext: () => void;
   onClear: () => void;
   onClose?: () => void;
+  // Desktop pane: shows an X beside the word heading.
+  onDismiss?: () => void;
 }) {
   const y = context.yesterday;
   return (
     <div className="word-detail">
-      <WordDetails w={word} groupLabel={context.groupLabel} />
+      <WordDetails w={word} groupLabel={context.groupLabel} onDismiss={onDismiss} />
       <div className="word-marks">
         <div className="word-marks-head">
           <span>{context.dayLabel}{status ? `: ${STATUS_LABEL[status]}` : ""}</span>

@@ -154,7 +154,7 @@ export default function WordMountain() {
     setIntroClosed(false);
   }
 
-  // Keyboard shortcuts (1/2/3 mark+advance, ArrowRight advance) work whether the word is
+  // Keyboard shortcuts (1/2/3 mark+advance, ArrowRight advance, Escape close) work whether the word is
   // showing in the mobile bottom sheet or the desktop pane, so they're wired at document
   // level. Refs keep the handler reading the latest mark/next/current without re-binding
   // the listener on every render.
@@ -167,9 +167,13 @@ export default function WordMountain() {
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
-      if (isTyping(e)) return;
+      if (e.defaultPrevented || isTyping(e)) return;
       const w = currentRef.current;
       if (!w) return;
+      if (e.key === "Escape") {
+        setSelected(null);
+        return;
+      }
       const m = ({ "1": "k", "2": "u", "3": "d" } as const)[e.key as "1" | "2" | "3"];
       if (m) {
         e.preventDefault();
@@ -437,6 +441,7 @@ export default function WordMountain() {
             onMark={mark}
             onNext={() => next(current)}
             onClear={clearCurrent}
+            onDismiss={() => setSelected(null)}
           />
         ) : (
           <p className="word-pane-empty">Choose a word to see its meaning.</p>

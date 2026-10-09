@@ -42,6 +42,8 @@ export default function Nav() {
 
     function onKey(e: KeyboardEvent) {
       if (e.key === "Escape") {
+        // Claim the key so page-level Escape handlers (e.g. closing a word) leave it alone.
+        e.preventDefault();
         setOpen(false);
         buttonRef.current?.focus();
       }
@@ -51,10 +53,11 @@ export default function Nav() {
       if (panelRef.current?.contains(target) || buttonRef.current?.contains(target)) return;
       setOpen(false);
     }
-    document.addEventListener("keydown", onKey);
+    // Capture phase, so this runs before page handlers also listening on document.
+    document.addEventListener("keydown", onKey, true);
     document.addEventListener("pointerdown", onPointerDown);
     return () => {
-      document.removeEventListener("keydown", onKey);
+      document.removeEventListener("keydown", onKey, true);
       document.removeEventListener("pointerdown", onPointerDown);
     };
   }, [open]);
