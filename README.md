@@ -7,8 +7,8 @@ A simple IELTS practice site built with Next.js. No database or environment vari
 - `/words` Word list by topic; mark each word Know, Unsure or Don't know (keys 1, 2, 3)
 - `/flashcards` Flashcards filtered by topic and status
 - `/quiz` 10-question quizzes (definitions and gap-fill)
-- `/speaking` Speaking Part 2 cue cards with 1-minute prep and 2-minute talk timers
-- `/writing` Writing Task 2 questions with a 40-minute timer, word count and saved drafts
+- `/speaking` Speaking Part 2 cue cards with 1-minute prep and 2-minute talk timers (hidden for now, see `lib/features.ts`)
+- `/writing` Writing Task 2 questions with a 40-minute timer, word count and saved drafts (hidden for now, see `lib/features.ts`)
 
 Progress and drafts are stored in the visitor's browser (localStorage).
 

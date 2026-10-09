@@ -4,14 +4,15 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { signOut, useAuthEmail } from "@/lib/supabase/use-auth-email";
+import { SPEAKING_ENABLED, WRITING_ENABLED } from "@/lib/features";
 
-const LINKS = [
-  ["/words", "Words"],
-  ["/flashcards", "Flashcards"],
-  ["/quiz", "Quiz"],
-  ["/speaking", "Speaking"],
-  ["/writing", "Writing"],
-] as const;
+const LINKS = ([
+  ["/words", "Words", true],
+  ["/flashcards", "Flashcards", true],
+  ["/quiz", "Quiz", true],
+  ["/speaking", "Speaking", SPEAKING_ENABLED],
+  ["/writing", "Writing", WRITING_ENABLED],
+] as const).filter(([, , enabled]) => enabled);
 const AUTH_PAGES = ["/login", "/signup", "/forgot-password", "/update-password"];
 
 export default function Nav() {

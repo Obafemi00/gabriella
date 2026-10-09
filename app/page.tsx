@@ -2,14 +2,16 @@ import Link from "next/link";
 import { ArrowRight, ChevronRight } from "lucide-react";
 import ProgressSummary from "@/components/ProgressSummary";
 import { WORDS } from "@/lib/words";
+import { SPEAKING_ENABLED, WRITING_ENABLED } from "@/lib/features";
 
-const TOOLS = [
-  ["/words", "Words", "Search the full word list and mark what you know."],
-  ["/flashcards", "Flashcards", "Turn cards over, rate yourself, and review the ones you missed."],
-  ["/quiz", "Quiz", "Ten quick questions: definitions and gap-fill sentences."],
-  ["/speaking", "Speaking", "Part 2 cue cards with a one-minute preparation timer and two-minute talk timer."],
-  ["/writing", "Writing", "Task 2 questions with a 40-minute timer and a live word count."],
-] as const;
+// Filtered before numbering, so the visible tools are always 01, 02, 03...
+const TOOLS = ([
+  ["/words", "Words", "Search the full word list and mark what you know.", true],
+  ["/flashcards", "Flashcards", "Turn cards over, rate yourself, and review the ones you missed.", true],
+  ["/quiz", "Quiz", "Ten quick questions: definitions and gap-fill sentences.", true],
+  ["/speaking", "Speaking", "Part 2 cue cards with a one-minute preparation timer and two-minute talk timer.", SPEAKING_ENABLED],
+  ["/writing", "Writing", "Task 2 questions with a 40-minute timer and a live word count.", WRITING_ENABLED],
+] as const).filter(([, , , enabled]) => enabled);
 
 export default function Home() {
   return (
