@@ -2,10 +2,12 @@
   "name": "gabriella-ielts",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "words": "node scripts/build-words.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.7",

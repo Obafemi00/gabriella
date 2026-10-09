@@ -2,18 +2,21 @@
 import { useEffect, useRef, useState } from "react";
 import { WORDS, type Word } from "@/lib/words";
 import { setStatus } from "@/lib/progress";
-import { escapeRegExp, isTyping, pick, shuffle } from "@/lib/utils";
+import { blankWord } from "@/lib/find-word";
+import { isTyping, pick, shuffle } from "@/lib/utils";
 
 type Q = { w: Word; type: "def" | "gap"; opts: Word[]; prompt: string };
 
 function build(w: Word): Q {
-  const re = new RegExp(escapeRegExp(w.word), "i");
-  const type: Q["type"] = re.test(w.ex) && Math.random() < 0.5 ? "gap" : "def";
+  // Blanks the whole form used in the example ("subsidies" → "_____"), with the same
+  // matcher the word-list validator uses.
+  const gap = blankWord(w.word, w.ex);
+  const type: Q["type"] = gap !== null && Math.random() < 0.5 ? "gap" : "def";
   // Same part of speech where possible, so only one option fits the meaning or sentence.
   const other = WORDS.filter((x) => x.word !== w.word);
   const samePos = other.filter((x) => x.pos === w.pos);
   const distract = pick(samePos.length >= 3 ? samePos : other, 3);
-  return { w, type, opts: shuffle([w, ...distract]), prompt: type === "gap" ? w.ex.replace(re, "_____") : w.def };
+  return { w, type, opts: shuffle([w, ...distract]), prompt: type === "gap" && gap !== null ? gap : w.def };
 }
 
 export default function Quiz() {
